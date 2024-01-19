@@ -1,0 +1,117 @@
+*{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 16px;
+    margin:0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('../images/bg-intro-desktop.png');
+}
+h1{
+    font-weight: bolder;
+}
+.paragraphe{
+    display: block;
+    max-width: 500px;
+}
+#tryIt{
+    width: 100%;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    margin-right: auto;
+    border-radius: .5em;
+    box-shadow: 0px 6px rgba(68, 68, 68, 0.3);
+}
+#tryIt:hover{
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 200ms ease-in-out;
+}
+form{
+    width: 100%;
+    background-color: white;
+    border-radius: .5em;
+    box-shadow: 0px 6px rgba(68, 68, 68, 0.3);
+}
+#submit{
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color:white;
+    box-shadow: inset 0px -2px rgb(0, 159, 0);
+}
+#submit:hover{
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 200ms ease-in-out;
+}
+#TermsServices{
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+#TermsServices a{
+    color: hsl(0, 100%, 74%);
+}
+#TermsServices a:hover{
+    font-weight: bold;
+    transition: all 200ms ease-in-out;
+}
+@media(max-width:1200px){
+    #frow{
+        padding: 0 !important;
+        margin: auto;
+    }
+    form{
+        height: 58vw ;
+        max-height: 450px;
+    }
+    #main_content {
+        max-width: unset;
+        width: 99vw;
+        margin: 0;
+    }
+    .column{
+        padding: 4vw !important;
+    }
+}
+@media(max-width:768px){
+    body{
+        background-image: url(../images/bg-intro-mobile.png);
+    }
+    .column:nth-of-type(1){
+        text-align: center;
+    }
+    .column:nth-of-type(2){
+        margin: auto;
+        max-width: 600px !important;
+    }
+    form{
+        height: unset ;
+        max-height: unset;
+    }
+    #main_content{
+        margin-top: 300px !important;
+        margin-bottom: 100px !important;
+    }
+}
+.invalid {
+    border: solid 2px hsl(0, 100%, 74%);
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: center right 5%;
+}
+label{
+  color: hsl(0, 100%, 74%); 
+  margin-left: auto; 
+  width: 100%;
+  text-align: end;
+}
+#submitted{
+    box-shadow: 0px 4px rgba(68, 68, 68, 0.3);
+}

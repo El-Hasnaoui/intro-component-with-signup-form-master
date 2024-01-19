@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Playfair:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center">
+<div id='main_content' class="container mt-auto mb-auto" >
+  <div id='frow'class="row d-flex justify-content-space-around align-items-center p-5">
+    <div class="column col-12 col-md-6 p-5 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="mb-4 font-weight-bold">Learn to code by watching others</h1>
+
+      <p class="paragraphe">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p>
+
+    </div>
+    <div class="column col-12 col-md-6 p-5 ">
+      <button href="#" class="btn p-3 "id="tryIt">Try it free 7 days then $20/mo. thereafter</button>
+      <form action="" class="p-5 mt-3">
+          <input type="text" class="form-control  p-3" id="first_name" placeholder="First Name"  required>
+          <label for="first_name" class="form-label mb-3" id="Lfirst_name"></label>
+          <input type="text" class="form-control p-3" id="last_name" placeholder="Last Name " required>
+          <label for="last_name" class="form-label mb-3" id="Llast_name"></label>
+          <input type="email" class="form-control p-3" id="emailaddress" placeholder="Email Address" required>
+          <label for="emailaddress" class="form-label mb-3" id="Lemailaddress"></label>
+          <input type="password" class="form-control p-3 mb-0" id="password" placeholder="Password" required>
+          <label for="password" class="form-label mb-3" id="Lpassword"></label>
+        <button type="submit" class="btn mb-3" id="submit">Claim your free trial</button>
+        <div id="TermsServices">By clicking the button, you are agreeing to our<a href="#"> Terms and Services</a></div>
+        <div id ='submitted'class="" role="alert"></div>
+      </form>
+    </div>
+  </div>
+</div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#submit">Mohamed El Hasnaoui</a>.
+    </p>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>
