@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-   
+      document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+    })
     handle = function(){
         input1 = document.querySelector('#first_name').value;
         input2 = document.querySelector('#last_name').value;
